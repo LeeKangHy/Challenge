@@ -2,7 +2,7 @@ import secrets
  
 # Random per-session flag: secret.py is imported once when challenge.py starts,
 # so a fresh FLAG is generated every time you run `python3 challenge.py`.
-FLAG = f"HTB{{{secrets.token_hex(16)}}}"
+FLAG = f"BKSEC{{{secrets.token_hex(16)}}}"
  
 # `secret.py` is imported once for every new challenge process.  Consequently,
 # this singleton is a fresh six-byte passcode for each exploit session, while
